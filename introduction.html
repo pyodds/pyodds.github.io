@@ -85,6 +85,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">PyODDS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#api-demo">API Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automl-api-demo">AutoML API Demo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#results-are-shown-as">Results are shown as</a></li>
 </ul>
@@ -201,6 +202,31 @@ conn,cursor<span class="o">=</span>connect_server<span class="o">(</span>host, u
 
 <span class="c1"># train the anomaly detection algorithm</span>
 <span class="nv">clf</span> <span class="o">=</span> algorithm_selection<span class="o">(</span>algorithm_name<span class="o">)</span>
+clf.fit<span class="o">(</span>X_train<span class="o">)</span>
+
+<span class="c1"># get outlier result and scores</span>
+<span class="nv">prediction_result</span> <span class="o">=</span> clf.predict<span class="o">(</span>X_test<span class="o">)</span>
+<span class="nv">outlierness_score</span> <span class="o">=</span> clf.decision_function<span class="o">(</span><span class="nb">test</span><span class="o">)</span>
+
+<span class="c1"># visualize the prediction_result</span>
+visualize_distribution<span class="o">(</span>X_test,prediction_result,outlierness_score<span class="o">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="automl-api-demo">
+    <h2>AutoML API Demo<a class="headerlink" href="#automl-api-demo" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>from utils.import_algorithm import algorithm_selection
+from utils.utilities import output_performance,connect_server,query_data
+
+<span class="c1"># connect to the database</span>
+conn,cursor<span class="o">=</span>connect_server<span class="o">(</span>host, user, password<span class="o">)</span>
+
+<span class="c1"># query data from specific time range</span>
+<span class="nv">data, ground_truth</span> <span class="o">=</span> query_data<span class="o">(</span>database_name,table_name,start_time,end_time,<span style="color: #ff4141">ground_truth_flag</span>=True<span class="o">)</span>
+
+<span class="c1"># train the anomaly detection algorithm</span>
+<span class="nv">alg_selector</span> <span class="o">=</span> = Cash<span class="o">(</span>data, ground_truth<span class="o">)</span>
+<span class="nv">clf</span> <span class="o">=</span> alg_selector.model_selector<span class="o">(</span>max_evals<span class="o">)</span>
 clf.fit<span class="o">(</span>X_train<span class="o">)</span>
 
 <span class="c1"># get outlier result and scores</span>
