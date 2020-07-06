@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>utils package &mdash; pyodds 1.0 documentation</title>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+
+
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="algo package" href="algo.html" />
+</head>
+
+<body class="wy-body-for-nav">
+
+
+  <div class="wy-grid-for-nav">
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+
+            <a href="index.html" class="icon icon-home"> pyodds
+
+
+
+          </a>
+
+
+
+
+
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+
+
+
+
+
+
+              <p class="caption"><span class="caption-text">Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">PyODDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apicheatsheet.html">APIs Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementedalgos.html">Implemented Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html#cite-this-work">Cite this work</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyodds</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="algo.html">algo package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">automl package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-automl.cash">automl.cash module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-automl.config_space">automl.config_space module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-automl">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+      <nav class="wy-nav-top" aria-label="top navigation">
+
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyodds</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+
+        <div class="rst-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+
+      <li><a href="index.html">Docs</a> &raquo;</li>
+
+          <li><a href="modules.html">pyodds</a> &raquo;</li>
+
+      <li>utils package</li>
+
+
+      <li class="wy-breadcrumbs-aside">
+
+
+            <a href="https://github.com/datamllab/PyODDS" rel="nofollow"> View GitHub Page</a>
+
+
+      </li>
+
+  </ul>
+
+
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+
+  <div class="section" id="automl-package">
+<h1>automl package<a class="headerlink" href="#automl-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+
+<div class="section" id="module-automl.cash">
+<span id="automl-CASH-module"></span><h2>automl.cash module<a class="headerlink" href="#module-automl.CASH" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="automl.cash.CASH">
+<em class="property">class </em><code class="sig-prename descclassname">automl.cash.</code><code class="sig-name descname">CASH</code><span class="sig-paren">(</span><em class="sig-param">name: str = 'CASH'</em>, <em class="sig-param">data: pandas.core.frame.DataFrame = None</em>, <em class="sig-param">ground_truth: pandas.core.frame.DataFrame = None</em>, <span class="sig-paren">)</span><a class="headerlink" href="#automl.cash.CASH" title="Permalink to this definition">¶</a></dt>
+<dd>
+    <p>Combined Algorithm Selection and Hyperparameter search (CASH) is an Hyperparameter Optimization technique
+        that can simultaneously search for the best algorithm and the best hyperparmeter configuration for that algorithm within its objective function </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em><em> (</em><em>default='AutoEncoder'</em><em>)</em>) – The name of the algorithm</p></li>
+<li><p><strong>data</strong> (<em>pandas.core.frame.DataFrame</em><em>, </em><em> (</em><em>default=None</em><em>)</em>) – The dataset which must be studied on</p></li>
+<li><p><strong>ground_truth</strong> (<em>pandas.core.frame.DataFrame</em><em>, </em><em> (</em><em>default=None</em><em>)</em>) – The labels for the dataset</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+
+<dl class="method">
+<dt id="automl.cash.CASH.objective_function">
+<code class="sig-name descname">objective_function</code><span class="sig-paren">(</span><em class="sig-param">param: dict</em><span class="sig-paren">)</span> &#x2192; numpy.float64<a class="headerlink" href="#automl.cash.CASH.objective_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes a point in the Search Space, and returns its corresponding loss (quantitative measure of failure).
+    This method, converts the search point into its corresponding algorithm, trains the algorithm on the train split,
+    and records its failure on the test split. This quantitative measure of failure on test split is returned as loss
+:param dict: A deterministic point in the AutoML Search Space</p>
+
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>loss</strong> – Quantitative measure of model failure. The objective is to minimize this measure </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>numpy.float64</p>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<dl class="method">
+<dt id="automl.cash.CASH.model_selector">
+<code class="sig-name descname">model_selector</code><span class="sig-paren">(</span><em class="sig-param">max_evals: int</em><span class="sig-paren">)</span> &#x2192; algo.base.Base<a class="headerlink" href="#automl.cash.CASH.model_selector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict raw anomaly score of X using the fitted detector.
+The anomaly score of an input sample is computed based on different
+detector algorithms. For consistency, outliers are assigned with
+larger anomaly scores.
+:param max_evals: The number of iterations of the Search algorithm before termination</p>
+
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>clf</strong> – A specific algorithm with fixed hyperparameter configuration</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>algo.base.Base</p>
+</dd>
+</dl>
+</dd>
+</dl>
+
+</dl>
+</div>
+
+<div class="section" id="module-automl.config_space">
+<span id="automl-config_space-module"></span><h2>automl.config_space module<a class="headerlink" href="#module-automl.config_space" title="Permalink to this headline">¶</a></h2>
+
+<dl class="function">
+<dt id="automl.config_space.construct_search_space">
+<code class="sig-prename descclassname">automl.config_space.</code><code class="sig-name descname">construct_search_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automl.config_space.construct_search_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the AutoML Search Space for all baseline algorithms</p>
+<dl class="field-list simple">
+
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>search_space</strong> – A dictionary consisting of all possible hyperparameter choices</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="automl.config_space.construct_classifier">
+<code class="sig-prename descclassname">automl.config_space.</code><code class="sig-name descname">construct_classifier</code><span class="sig-paren">(</span>  <em class="sig-param">search_point</em>  <span class="sig-paren">)</span><a class="headerlink" href="#automl.config_space.construct_classifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the classifier corresponding to the given point in search space</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>search_point</strong> (<em>dict</em>) – A deterministic point in search space</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>clf</strong> – An algorithm with fixed hyperparameter configuration which corresponds the deterministic point in search space</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>algo.base.Base</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+</div>
+
+
+           </div>
+
+          </div>
+          <footer>
+
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+
+
+        <a href="algo.html" class="btn btn-neutral float-left" title="algo package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+
+    </div>
+
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Yuening Li, Daochen Zha, Na Zou, Xia Hu
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+
+
+
+
+
+</body>
+</html>
